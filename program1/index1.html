@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>billing section</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+  <header>
+    <h1>BOOKS table</h1>
+  </header>
+
+  <section class="billing-card">
+   <table border="1">
+    <tr class="heading">
+      <th>Product code</th>
+      <th>Product name</th>
+      <th>Price</th>
+      <th>Purchase</th>
+      <th>Quantity</th>
+    </tr>
+    <tr>
+      <td>601</td>
+      <td>biography of prem chand</td>
+      <td class="count">200</td>
+      <td><input type="checkbox" id="ps1" onclick="enableqty('ps1', 'q1')"></td>
+      <td><input type="number" id="q1" min="1" disabled></td>
+    </tr>
+    <tr>
+      <td>602</td>
+      <td>Harry potter</td>
+      <td class="count">1600</td>
+      <td><input type="checkbox" id="ps2" onclick="enableqty('ps2', 'q2')"></td>
+      <td><input type="number" id="q2" min="1" disabled></td>
+    </tr>
+    <tr>
+      <td>603</td>
+      <td>discovery of india</td>
+      <td class="count">550</td>
+      <td><input type="checkbox" id="ps3" onclick="enableqty('ps3', 'q3')"></td>
+      <td><input type="number" id="q3" min="1" disabled></td>
+    </tr>
+    <tr>
+      <td>604</td>
+      <td>Alif Laila story</td>
+      <td class="count">250</td>
+      <td><input type="checkbox" id="ps4" onclick="enableqty('ps4', 'q4')"></td>
+      <td><input type="number" id="q4" min="1" disabled></td>
+    </tr>
+    <tr>
+      <td>605</td>
+      <td>amitabh bachchan</td>
+      <td class="count">500</td>
+      <td><input type="checkbox" id="ps5" onclick="enableqty('ps5', 'q5')"></td>
+      <td><input type="number" id="q5" min="1" disabled></td>
+    </tr>
+   </table>
+  </section>
+
+  <section class="actions">
+    <button class="button" onclick="result()">Show My Bill</button>
+    <button class="button" onclick="reset()">Reset</button>
+  </section>
+
+  <script src="script1.js"></script>
+</body>
+</html>

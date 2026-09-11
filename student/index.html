@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+    <head>
+         <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration Form</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+    </head>
+    <body>
+        <center>
+        <h1>
+            Student Registration Form
+        </h1>
+        <form>
+            <table border ="1">
+                <tr>
+                    <td>NAME</td>
+                    <td><input type="text" id ="name"></td>
+                </tr>
+                <tr>
+                    <td>ROLL_NO</td>
+                    <td><input type="number" id ="rollno" min="1"></td>
+                </tr>
+                <tr>
+                    <td>YEAR</td>
+                    
+                    <td><select>
+                        <option value="1st">1st year</option>
+                        <option value="1st">2nd year</option>
+                        <option value="1st">3rd year</option>
+                        <option value="1st">4th year</option>
+                       
+                    </select></td>
+                </tr>
+                <tr>
+              
+                        <td>EMAIL</td>
+                        <td><input type="email" id="email"></td>
+                    
+                </tr>
+                <tr>
+                    <td>CREATE PASSWORD</td>
+                    <td ><input type="password" id ="p1"></td>
+                </tr>
+                  <tr>
+                    <td>FEES DEPOSITED?</td>
+                    <td ><input type="checkbox" id ="f1"></td>
+                </tr>
+                 <tr>
+                    <td>COURSE</td>
+                    <td ><input type="radio" id ="A1" name="course" value="B.TECH"><label>B.TECH</label>
+                    <input type="radio" id ="B1" name="course" value="MBA"><label>MBA</label>
+                    <input type="radio" id ="C1" name="course" value="MCA"><label>MCA</label></td>
+                </tr>
+                 <tr >
+                    <td  >ADDRESS</td>
+                    <td  ><input type="textarea" id ="text" rows="2"  placeholder="enter your address here"></td>
+                </tr>
+                <tr>
+                    <td>UPLOAD FEE RECIEPT</td>
+                    <td><input type="file"></td>
+                </tr>
+                <tr>
+                    <td>HOW IS YOUR EXPERIENCE</td>
+                    <td>bad<input type="range" id="r1">best</td>
+                </tr>
+                <tr>
+                    <td>TIME</td>
+                    <td><input type="date" id="date1"></td>
+                </tr>
+                
+                <tr>
+                    <td colspan="2" align="center"><input type="submit" id="s1" onclick="return REGISTER()"></td>
+                </tr>
+                <tr>
+                    
+                    <td colspan="2" align="center"><input type="reset" id="s1"></td>
+                </tr>
+                
+            </table>
+        </form>
+        </center>
+    </body>
+</html>
